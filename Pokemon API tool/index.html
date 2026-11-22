@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="poke.css" />
+		<title>PokeApi Tool</title>
+	</head>
+	<body>
+    <div class="controls">
+		<label>
+			<input type="text" id="search" placeholder="search Pokemon" />
+		</label>
+      <svg class="filter-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+  <path d="M3 4h18l-7 8v6l-4 2v-8z"/>
+      </svg>
+		<label>
+			<select id="filter">
+				<option value="all">Types</option>
+			</select>
+		</label>
+    </div>
+		<div id="grid"></div>
+
+		<!-- stats card -->
+		<div id="modal">
+			<div id="modalContent"></div>
+			<button id="closeModal">Close</button>
+		</div>
+
+		<div class="pager" id="nav">
+  <button id="prev">Previous</button>
+  <span id="pageNum">Page 1</span>
+  <button id="next">Next</button>
+    </div>
+		<footer>
+			<p>© 2026 PokeApi Tool. All Rights Reserved</p>
+			<p>
+				Made by BrokeButCoding
+			</p>
+		</footer>
+		<script src="poke.js"></script>
+	</body>
+</html>
